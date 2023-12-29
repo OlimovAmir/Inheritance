@@ -24,6 +24,14 @@ namespace Inheritance
             Console.WriteLine($"FirstName:\t {FirstName}, LastName:\t {LastName}");
         }
 
+        public void PrintPerson( Person[] person)
+        {
+            foreach( Person p in person )
+            {
+                p.PrintFullName();
+            }
+        }
+
         public override string ToString()
         {
             return $"{FirstName} {LastName} {Age}";
