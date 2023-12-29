@@ -12,5 +12,14 @@ class Program
         person.PrintName();
 
         Console.WriteLine(person);
+
+        Student student = new Student 
+        {
+            FirstName = "Parvina",
+            LastName = "Olimova",
+            Age = 31,
+        };
+
+        student.PrintName();
     }
 }
